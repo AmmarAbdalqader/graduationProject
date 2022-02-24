@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favourites</title>
+    <link rel="stylesheet" type="text/css" href="css/favourites.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+
+    <!--Google Fonts-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+    </style>
+    <!--Google Fonts-->
+
+    <!-- for nav dropdown-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- for nav dropdown-->
+  </head>
+
+  <body>
+   <!-- nav -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom_nav">
+    <!-- <button id="sign-out-button" > TEST</button> -->
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo2.png" width="32" height="30" alt="" class="d-inline-block align-top">
+        Foresight
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html?course_id=1">Development & Software</a></li>
+              <li><a class="dropdown-item" href="courses.html?course_id=2">Mathematics</a></li>
+              <li>
+              </li>
+              <li><a class="dropdown-item" href="courses.html?course_id=3">Health & Fitness</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#support">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutUs.html">About us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="Login.html" id="navLogin" class="btn btn-sm btn-success" style="display: block;"><b>Log in / Sign Up</b></a>
+        </div>
+       
+
+        <!--Profie dropdown-->
+        <div class="dropdown"  id="navUser">
+          <a class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"><img src="img/user.png" style="width: 35px; height: 35px;"></a>
+
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">
+              <a href="profile.html"><img src=img/user.png width="40" height="40"><b class="ml-2">fName</b></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="profile.html">Settings</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="index.html#support">Help</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" id="sign-out-button" style="color:#ca1711; text-align: right;"><b>Sign out</b></a>
+            </li>
+          </ul>
+        </div>
+        <!--Profie dropdown-->
+
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+
+    <!-- favourites -->
+    <section id="team" class="pb-5">
+      <div class="container">
+        <br />
+        <h5 class="section-title h1">My Favourites</h5>
+        <hr class="mt-2" style="height: 3px" />
+        <br /><br /><br />
+        <div class="row">
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="html">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/html-5.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">HTML</h4>
+                      <p class="card-text">Modern HTML From The Beginning.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">HTML</h4>
+                      <p class="card-text">
+                        HTML from the beginning-all the way up to an expert
+                        level!! , Best HTML course in 2021
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=1';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('html')"
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="css">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/css-3.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">CSS</h4>
+                      <p class="card-text">
+                        Advanced CSS: Flexbox, Grid and More!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Css</h4>
+                      <p class="card-text">
+                        The most advanced and modern CSS course on the internet:
+                        master flexbox, CSS Grid, responsive design, and so much
+                        more.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=2';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('css') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="js">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/js.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">JavaScript</h4>
+                      <p class="card-text">
+                        The Complete JavaScript Course: From Zero to Expert!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">JavaScript</h4>
+                      <p class="card-text">
+                        JavaScript from the beginning-all the way up to an
+                        expert level!! , Best JavaScript course in 2022!
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=3';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('js') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="swift">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/sass.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Swift</h4>
+                      <p class="card-text">
+                        This is basic card with image on top, title, description
+                        and button.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Sass</h4>
+                      <p class="card-text">
+                        This is basic card with image on top, title, description
+                        and button.This is basic card with image on top, title,
+                        description and button.This is basic card with image on
+                        top, title, description and button.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=4';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('swift') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="android">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/android.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Android</h4>
+                      <p class="card-text">
+                        The Complete Android 12 & Kotlin Development Masterclass
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Android</h4>
+                      <p class="card-text">
+                        Learn Android 12 App Development From Beginner to
+                        Advanced Developer. Build Apps like Trello, 7Min
+                        Workout, Weather App
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=5';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('android') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="c">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/letter-c.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">C Programming</h4>
+                      <p class="card-text">The Ultimate Guide for Beginners</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">C Programming</h4>
+                      <p class="card-text">
+                        C programming course for beginners to help you write
+                        complex C programs & land in a high paying IT job
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details.html?details_id=6';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('c') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="calc">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/calculus.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Calculus</h4>
+                      <p class="card-text">
+                        Pre Calculus, Calculus and Trigonometry.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Calculus</h4>
+                      <p class="card-text">
+                        Become a Calculus 1 Master With one Course!!
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=1';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('calc') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="dis">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/discrete-math.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Discrete Mathematics</h4>
+                      <p class="card-text">
+                        Discrete Math for Computer Science Students.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Discrete Mathematics</h4>
+                      <p class="card-text">
+                        build the mathematical foundation for computer science
+                        courses such as data structures, algorithms, relational
+                        and database theory.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=2';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('dis') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="bus">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/analytics.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">
+                        Business Analytics & Intelligence
+                      </h4>
+                      <p class="card-text">
+                        Applied Analytics (business application - non
+                        mathematical).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        Business Analytics & Intelligence
+                      </h4>
+                      <p class="card-text">
+                        Basics of Risk, Marketing, Collections, Operations &
+                        Fraud Analytics. Know the objective, techniques &
+                        Success stories.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=3';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('bus') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="matrix">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/matrix.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Matrix Algebra for Beginners</h4>
+                      <p class="card-text">
+                        Learn and develop understanding for solving mathematical
+                        problems on Matrix Algebra in few steps.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Matrix Algebra for Beginners</h4>
+                      <p class="card-text">
+                        Perfect Course for Complete Beginners - Create Matrecies
+                        and how to apply them logically.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=4';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('matrix') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="vec">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/vector.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">
+                        A Complete & Practical Course for Vectors
+                      </h4>
+                      <p class="card-text">
+                        Welcome to this thorough course on vectors for Math and
+                        Calculus!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        A Complete & Practical Course for Vectors
+                      </h4>
+                      <p class="card-text">
+                        A deep dive into the fundamentals of vectors for math
+                        and calculus through hands-on practice and engaging
+                        visuals.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=5';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('vec') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="math">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/mathematics.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Mathematics</h4>
+                      <p class="card-text">
+                        This is basic card with image on top, title, description
+                        and button.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Mathematics</h4>
+                      <p class="card-text">
+                        This is basic card with image on top, title, description
+                        and button.This is basic card with image on top, title,
+                        description and button.This is basic card with image on
+                        top, title, description and button.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details2.html?details2_id=6';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('math') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="phy">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/physiotherapy.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Advanced physiotherapy</h4>
+                      <p class="card-text">
+                        Having a systematic and structured approach to the
+                        shoulder history and examination.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        Shoulder joint assesment and treatment
+                      </h4>
+                      <p class="card-text">
+                        The prerequisite for any treatment in the shoulder
+                        region of a patient with pain is a precise and
+                        comprehensive picture of the signs and symptoms as they
+                        occur during the assessment and as they existed until
+                        then.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=1';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('phy') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="fit">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/fitness.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Yoga Course</h4>
+                      <p class="card-text">Diploma in Yoga Training.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Diploma in Yoga Training</h4>
+                      <p class="card-text">
+                        Start a New Career in Yoga with this Yoga Course for
+                        Beginners/Intermediates.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=2';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('fit') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="life">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/coach.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Life Coaching Course</h4>
+                      <p class="card-text">
+                        Life Coaching Certificate Course (Beginner to
+                        Intermediate).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">Life Coaching Course</h4>
+                      <p class="card-text">
+                        A comprehensive online training that delivers in-depth
+                        understanding of the key elements of the Life Coaching
+                        profession.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=3';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('life') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="sport">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/seo.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Sports Management</h4>
+                      <p class="card-text">
+                        A Comprehensive Overview at How the Sports Industry
+                        Operates and the Challenges Facing the Modern Sports
+                        Industry Today.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        Sports Management: The Essentials Course
+                      </h4>
+                      <p class="card-text">
+                        Perfect for Sports management is the principle of
+                        organising and running sports and sports activities.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=4';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('sport') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="med">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/yoga.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">Meditation Practitioner</h4>
+                      <p class="card-text">
+                        Welcome to this thorough course on Medetation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        Meditation Practitioner / Teacher Certification
+                      </h4>
+                      <p class="card-text">
+                        A fully Accredited Meditation Practitioner / Teacher
+                        Certification course taking you from beginner to
+                        professional level.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=5';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('med') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+          <!-- card -->
+          <div class="col-xs-12 col-sm-6 col-md-4" id="foot">
+            <div class="image-flip">
+              <div class="mainflip flip-0">
+                <div class="frontside">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <p>
+                        <img
+                          class="img-fluid"
+                          src="img/book.png"
+                          alt="card image"
+                        />
+                      </p>
+                      <h4 class="card-title">
+                        Introduction to Football (Soccer) Tactics
+                      </h4>
+                      <p class="card-text">Course for football tactics.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="backside">
+                  <div class="card">
+                    <div class="card-body text-center mt-4">
+                      <h4 class="card-title">
+                        Introduction to Football (Soccer) Tactics
+                      </h4>
+                      <p class="card-text">
+                        Gain a deeper understanding of the world of football
+                        with this guide to the basic principles of football
+                        tactics.
+                      </p>
+                      <ul class="list-inline">
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-info"
+                            onclick="window.location.href= 'details3.html?details3_id=6';"
+                          >
+                            <i
+                              class="fa fa-play-circle"
+                              style="font-size: 20px"
+                            ></i>
+                            Play
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a
+                            class="btn btn-outline-danger"
+                            onclick="removeFavourite('foot') "
+                          >
+                            Remove Fav
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /card -->
+        </div>
+      </div>
+    </section>
+    <!-- favourites -->
+
+    <!-- footer -->
+    <footer class="text-center main-footer footer_copy">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <aside class="footer-widget">
+                <h3 class="h3">Site Map</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#cat">Categories</a></li>
+                  <li><a href="aboutUs.html">About us</a></li>
+                  <li><a href="index.html#support">Support</a></li>
+                </ul>
+              </aside>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">About Foresight</h3>
+              <p class="par">
+                <b
+                  >We help students of all degrees and regions prepare for the
+                  path ahead - wherever it leads.</b
+                >
+              </p>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">Around the Web</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.youtube.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.twitter.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <b>Copyright &copy; 2021. All Rights Reserved For BAU</b><br />
+              <sub>Haitham Abdallah Ammar</sub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      var courses = [
+        "html",
+        "css",
+        "js",
+        "swift",
+        "android",
+        "c",
+        "calc",
+        "dis",
+        "bus",
+        "matrix",
+        "vec",
+        "math",
+        "phy",
+        "fit",
+        "life",
+        "sport",
+        "med",
+        "foot",
+      ];
+      $(document).ready(function () {
+        $.each(courses, function (key, value) {
+          var getItem = window.localStorage.getItem(value);
+          if (getItem == "true") {
+            $("#" + value).prop("hidden", false);
+          } else {
+            $("#" + value).prop("hidden", true);
+          }
+        });
+      });
+      function removeFavourite(name) {
+        var element = document.getElementById(name);
+        id = name.split("_").pop();
+        element.style.display = "none";
+        window.localStorage.setItem(id, "false");
+      }
+    </script>
+
+
+
+    <!-- for nav bar  -->
+
+    <script type="module" src="js/login-firebase.js"></script>
+
+    <script type="module">
+        import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, sendPasswordResetEmail, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+        const auth = getAuth();
+      
+          function userOut() {
+            console.log("Potato");
+      
+            signOut(auth).then(() => {
+              console.log("Signed out Successfully");
+              location.href = "/login.html";
+      
+              // Sign-out successful.
+            }).catch((error) => {
+              console.log("Error Signing out");
+      
+              // An error happened.
+            });
+      
+          }
+      document.getElementById('sign-out-button').addEventListener('click', userOut, false);
+      
+      onAuthStateChanged(auth, user => {
+          if (user) {
+              console.log("User In");
+              console.log(user.uid);
+              document.getElementById("navLogin").style.display="none";
+              document.getElementById("navFav").style.display="block";
+              document.getElementById("navUser").style.display="block";
+      
+              var email = user.email;
+              var currentUser=user;
+              // User is signed in, see docs for a list of available properties
+              // https://firebase.google.com/docs/reference/js/firebase.User
+              const uid = user.uid;
+              // ...
+          } else {
+              console.log("User Out");
+      
+              document.getElementById("navLogin").style.display="block";
+              document.getElementById("navFav").style.display="none";
+              document.getElementById("navUser").style.display="none";
+      
+      
+              // User is signed out
+              // ...
+          }
+      })
+        </script>
+  </body>
+</html>

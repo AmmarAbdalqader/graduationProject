@@ -1,0 +1,233 @@
+.custom_nav{
+    background-color: #23374D;
+    font-size: small;
+    font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    box-shadow: 0px 2px 12px rgba(0,0,0,0.3);
+}
+.custom_nav ul.dropdown-menu {
+    text-decoration: none;
+    font-size: small;
+    font-family: Arial,sans-serif;
+}
+.custom_nav ul.dropdown-menu a{
+    color: black;
+    text-decoration: none;
+}
+.custom_nav ul.dropdown-menu :hover{
+    color: #5624d0;
+}
+.custom_nav ul.navbar-nav li.nav-item a.nav-link :focus {
+    color: #5624d0 !important;
+}
+.main-banner{
+    padding-top: 150px;
+    padding-bottom: 110px;
+    
+    background-size: auto;
+    background-color: #6bb6ff;
+    color: white;
+}
+.main-banner-content{
+    color: #ffffff;
+}
+.feature-holder {
+    text-align: center;
+    margin-bottom: 25px;
+}
+section.features {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    background-color: whitesmoke;
+}
+.feature-holder h3 {
+    font-size: 1.2em;
+}
+.feature-holder p {
+    font-size: 14px;
+}
+.online-courses, .classroom-training, .reviews-slider{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.online-courses-text, .classroom-courses-text-widget, .review-text-widget{
+    text-align: center;
+}
+.online-courses-text h2, .classroom-courses-text-widget h2, .review-text-widget h2{
+    font-size: 1.3em;
+}
+.online-courses-text p, .classroom-courses-text-widget p, .review-text-widget p{
+    font-size: 15px;
+}
+.online-course-card, .review-text-widget{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.online-course-card .card-title {
+    font-size: 1.2em;
+    line-height: 20px;
+}
+.online-course-card .card-text {
+    font-size: 14px;
+}
+.classroom-training {
+    background-color: whitesmoke;
+}
+
+.sign-up-form-sidebar .card-title {
+    font-size: 1.3em;
+}
+.sign-up-form-sidebar .card-text {
+    font-size: 14px;
+}
+
+.course-list-item{
+    color: black;
+    font-size: small;
+    padding-top: 20px;
+}
+.reviews-slider{
+    background-color: #eeeeee;
+}
+
+#color_00{
+    background-color: #0085FF;    
+}
+
+
+aside.footer-widget {
+    margin-bottom: 25px;
+}
+aside.footer-widget h5 {
+    font-size: 16px;
+}
+aside.footer-widget ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+aside.footer-widget ul li a {
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 5px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.42857143;
+    color: #fff;
+}
+
+.my_card:hover{
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    transition-duration: 0.4s;
+}
+.my_card h3{
+    font-size: 1.2em;
+    color: #494949;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    color: #fff;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+footer .footer-above {
+    padding-top: 50px;
+    background-color: #2c3e50;
+}
+
+footer .footer-col {
+    margin-bottom: 50px;
+}
+
+footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+}
+
+.btn-social {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 45px;
+}
+.btn-outline {
+    margin-top: 15px;
+    border: solid 2px #fff;
+    font-size: 20px;
+    color: #fff;
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active {
+    border: solid 2px #fff;
+    color: #18bc9c;
+    background: #fff;
+}
+
+
+.h3{
+    text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.par{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 1.42857143;
+    font-size: 20px;
+    margin: 0 0 10.5px;
+}
+
+.footer_copy{
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    line-height: 1.42857143;
+}
+
+.custom_contact{
+    border: 2px solid #eeeeee;
+    border-radius: 12px; 
+    padding: 5px;  
+    margin-top: 15px; 
+    margin-bottom: 10px;
+    color: #494949; ;
+    font-family: "Montserrat", "Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.3);
+}
+.custom_card{
+    background-color: #eeeeee;
+    
+}
+textarea {
+    resize: none;
+}
+.btn-contact{
+    background-color: #18a085;
+    color: white;
+}
+.btn-contact:hover,
+.btn-contact:focus,
+.btn-contact.active{
+    background-color: #0e6d5a;
+    color: white;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; 
+ }

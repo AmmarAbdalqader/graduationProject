@@ -1,0 +1,131 @@
+.about-section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+  }
+  
+  .contaienr-about {
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  .content-section {
+    float: left;
+    margin-top: 50px;
+    width: 55%;
+  }
+  
+  .image-section {
+    float: right;
+    width: 40%;
+    margin-top: 50px;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-section .about-content h3 {
+    margin-top: 28px;
+    color: #5d5d5d;
+  }
+  
+  .content-section .about-content p {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  .about-button a {
+    background-color: #a52a2a;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+  }
+ .about-button :hover,
+ .about-button:focus,
+ .about-button.active {
+    background-color: #3d3d3d;
+    color: #fff;
+  }
+ .about-button {
+    margin-top: 30px;
+  }
+  .content-section .social {
+    margin: 40px 40px;
+  }
+  .content-section .social i {
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+  }
+  
+  .content-section .social i:hover {
+    color: #3d3d3d;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .contaienr-about {
+      width: 80%;
+      display: block;
+      margin-top: auto;
+      padding-top: 50px;
+    }
+    .content-section {
+      float: none;
+      width: 100%;
+      display: block;
+      margin: auto;
+    }
+    .image-section {
+      float: none;
+      width: 100%;
+    }
+    .image-section img {
+      display: block;
+      margin: auto;
+      height: auto;
+      width: 100%;
+    }
+    .content-section .title-about {
+      text-align: center;
+      font-size: 19px;
+    }
+    .content-section .about-content .about-button {
+      text-align: center;
+    }
+    .content-section .about-content .about-button a {
+      padding: 9px 30px;
+    }
+    .content-section .social {
+      text-align: center;
+    }
+  }
+
+  h1{
+    color: #494949;
+  }
+  section{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    background-color: #dddddd; 
+  }
+
+  .a{
+    color: white;
+    text-decoration: none;
+  }
+  .a:hover,
+   a:focus,
+   a.active{
+    color: white;
+  }
+
+  .mycard{
+      padding: 10px;
+  }

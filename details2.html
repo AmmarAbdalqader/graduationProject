@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/details.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+
+    <!--Google Fonts-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+    </style>
+    <!--Google Fonts-->
+
+    <!-- for nav dropdown-->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <!-- for nav dropdown-->
+
+    <!-- Swal -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Swal -->
+  </head>
+
+  <body>
+    <!-- nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom_nav">
+      <!-- <button id="sign-out-button" > TEST</button> -->
+  
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo2.png" width="32" height="30" alt="" class="d-inline-block align-top">
+          Foresight
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="courses.html?course_id=1">Development & Software</a></li>
+                <li><a class="dropdown-item" href="courses.html?course_id=2">Mathematics</a></li>
+                <li>
+                </li>
+                <li><a class="dropdown-item" href="courses.html?course_id=3">Health & Fitness</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html#support">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="aboutUs.html">About us</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <a href="Login.html" id="navLogin" class="btn btn-sm btn-success" style="display: block;"><b>Log in / Sign Up</b></a>
+          </div>
+          <div class="d-flex">
+            <a href="favourites.html" style="text-decoration: none;"><i class="fa fa-heart"  id="navFav" style="font-size:24px; color:#ca1711; margin: 10px 5px 10px 10px; "></i></a>
+          </div>
+  
+          <!--Profie dropdown-->
+          <div class="dropdown"  id="navUser">
+            <a class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"><img src="img/user.png" style="width: 35px; height: 35px;"></a>
+  
+  
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li class="dropdown-item">
+                <a href="profile.html"><img src=img/user.png width="40" height="40"><b class="ml-2">fName</b></a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-item" href="profile.html">Settings</a>
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-item" href="index.html#support">Help</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li class="dropdown-item">
+                <a class="dropdown-item" id="sign-out-button" style="color:#ca1711; text-align: right;"><b>Sign out</b></a>
+              </li>
+            </ul>
+          </div>
+          <!--Profie dropdown-->
+  
+        </div>
+      </div>
+    </nav>
+    <!-- nav -->
+
+    <section id="details2_1">
+      <section id="home">
+        <h2>Calculus 1</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source src="img/video.mp4" type="video/mp4" />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>Calculus for beginners</h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Become a Calculus 1 Master With one Course</p>
+            </div>
+            <span>$45.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>math tutor at Foresight</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            Limits & Continuity, including how to solve every kind of limit
+            problem, and how to find discontinuities in a function
+            <br /><br />
+            Applications of Derivatives, including two of the hardest topics
+            from Calc 1: optimization and related rates
+            <br /><br />
+            Derivatives, including all of the derivative rules, the infamous
+            chain rule, and how to do implicit differentiation
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              An Intuitive Understanding of Limits
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Understand what a Limit actually is and what it means for a Limit
+              to Exist
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              How to Compute Limits by Rationalizing
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              How to Think More Deeply about Limits
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              How to Compute Limits using Special Trigonometric Limits
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            55 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            80 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+          
+          <div class="enroll-btn" id="fav-click">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('calc')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="details2_2">
+      <section id="home">
+        <h2>Discrete Math for Computer Science Students</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source
+              src="img/HTML Tutorial for Beginners 01 - HTML Introduction.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>
+                Master Discrete Math for Computer Science and Mathematics
+                Students
+              </h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>
+                build the mathematical foundation for computer science courses
+                such as data structures, algorithms, relational and database
+                theory,
+              </p>
+            </div>
+            <span>$45.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>Linguist and Math Tutor</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            Master Discrete Mathematics: Logic is perfect for you. I cover all
+            of the important topics thoroughly at a university level with
+            lecture videos, examples
+            <br /><br />
+            unique and challenging questions that will help you identify your
+            weak points and master the material code, etc.<br /><br />
+            Advanced responsive design: media queries, mobile-first vs
+            desktop-first, em vs rem units, etc.
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              You will learn and develop the ability to think, read and write
+              abstractly and Mathematically
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              You will lear how to create truth tables and tell the falsehood
+              and truthfulness of a compound statements.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              ou will understand boolean expressions, black boxes, logical gates
+              and digital circuits.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              You will learn essential concepts in Statistics and Combinatorics.
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            62 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            44 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+         
+          <div class="enroll-btn">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('dis')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="details2_3">
+      <section id="home">
+        <h2>Applied Analytics</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source
+              src="img/HTML Tutorial for Beginners 01 - HTML Introduction.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>
+                Applied Analytics (business application - non mathematical)
+              </h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>
+                Basics of Risk, Marketing, Collections, Operations & Fraud
+                Analytics. Know the objective, techniques & Success stories
+              </p>
+            </div>
+            <span>$59.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>Professional Data Scientist und BI Consultant</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            Birds Eye View of Analytics Verticals, their goals and inter linkage
+            - Which are the analytics vertical. What are their primary goals.
+            <br /><br />
+            Common Industry Terms - Understand terms like Loan types, billing
+            cycle, due date, delinquency etc. <br /><br />
+            Marketing Analytics Overview - Objective and levers - what is the
+            objective of marketing analytics. What are there main levers.
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Learn about wide applicability of analytics across various
+              industries
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Learn that analytics results in win-win scenario (good for
+              customer and firm)
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Hypothesis testing, p-value, type I & type II error
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Correlation, R-Square, RMSE, MAE, coefficient of determination and
+              more
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Logistic Regressions, Multiple Linear Regression, Regression Trees
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            69 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            61 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+          
+          <div class="enroll-btn">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('bus')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="details2_4">
+      <section id="home">
+        <h2>Matrix Algebra for Beginners</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source
+              src="img/HTML Tutorial for Beginners 01 - HTML Introduction.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>
+                Learn and develop understanding for solving mathematical
+                problems on Matrix Algebra in few steps
+              </h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>
+                Perfect Course for Complete Beginners - Create Matrecies and how
+                to apply them logically
+              </p>
+            </div>
+            <span>$39.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>Experienced Mathematics Instructor</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            This course would help in developing understanding on Matrix Algebra
+            <br /><br />
+            It starts with a lecture on Introduction to matrices to build(brush)
+            up fundamentals
+            <br /><br />
+            Transpose and Determinants of a matrix, Adjoint and Inverse of
+            matrix.
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              you will be able to develop understanding on how to solve problems
+              on Matrix Algebra.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              his course will enable students in solving problems on Matrix
+              Algebra in their school/college curriculum.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              apply fundamental Matrix Algebra concepts in solving practical
+              problems
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              emphasis is on learning Matrix Algebra using practice problems
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              applying Matrix Algebra constructs for solving system of linear
+              equations
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            46 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            21 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+         
+          <div class="enroll-btn">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('matrix')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="details2_5">
+      <section id="home">
+        <h2>A Complete & Practical Course for Vectors</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source
+              src="img/HTML Tutorial for Beginners 01 - HTML Introduction.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>
+                Welcome to this thorough course on vectors for Math and
+                Calculus!
+              </h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>
+                A deep dive into the fundamentals of vectors for math and
+                calculus through hands-on practice and engaging visuals.
+              </p>
+            </div>
+            <span>$34.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>Web Developer at Foresight</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            Engaging visuals: If you are a visual learner (like me!) you will
+            find the lectures very engagingI’ve designed it to explain vectors
+            for calculus.
+            <br /><br />
+            This course is completely written in LaTeX, a special software that
+            interprets mathematical expressions and produces nice-looking
+            equations and expressions <br /><br />
+            n each section you will find PDF handouts with the diagrams
+            presented for you to download and read while you’re on the go.
+            Vectors will always be right there with you!
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Perform operations with 2D and 3D vectors such as addition,
+              subtraction, scalar multiplication
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Transform vectors from Cartesian coordinates to Polar coordinates
+              and vice versa.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Find a unit vector from any vector.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Determine if vectors are orthogonal, linearly dependent or linear
+              combinations of other vectors.
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            62 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            24 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+         
+          <div class="enroll-btn">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('vec')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+    <section id="details2_6">
+      <section id="home">
+        <h2>Vedic Mathematics Course (Beginners to Intermediate Level)</h2>
+      </section>
+      <section id="inner-course">
+        <div class="overview">
+          <video style="width: 100%" controls>
+            <source
+              src="img/HTML Tutorial for Beginners 01 - HTML Introduction.mp4"
+              type="video/mp4"
+            />
+            <source src="movie.ogg" type="video/ogg" />
+            Your browser does not support the video tag.
+          </video>
+          <!-- <img class="course-image" src="img/c1.jfif" alt="" /> -->
+
+          <div class="course-head">
+            <div class="c-name">
+              <h2>Mental Math & Vedic Math</h2>
+              <div class="star">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>
+                Mental Math & Vedic Math techniques to speed up calculations.
+                Useful for School & Competitive Exams (GMAT, CAT, SAT etc)
+              </p>
+            </div>
+            <span>$29.99</span>
+          </div>
+          <h3>Instructor</h3>
+          <div class="tutor">
+            <img src="img/user.png" alt="" />
+            <div class="tutor-details">
+              <h5>Ammar</h5>
+              <p>Math Instructor</p>
+            </div>
+          </div>
+          <hr />
+          <h3>Course overview</h3>
+          <p>
+            Vedic Mathematics is the name given to an ancient system of Indian
+            Mathematics
+            <br /><br />
+            It contains a collection of techniques (also called Sutras) to speed
+            up mathematical calculations
+            <br /><br />
+            The most exciting benefit of Vedic Math is that it is very simple
+            and yet it helps speed up calculations by 10 to 15 times.
+          </p>
+          <hr />
+          <h3>What you'll Learn</h3>
+          <div class="learn">
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Techniques to become 10 to 15 times faster in calculations
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Perform better in everyday calculations and exams
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Increase your Speed as well as Accuracy.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              increase your confidence in solving math problems.
+            </p>
+            <p>
+              <i class="fa fa-check-circle"> </i>
+              Fundamentals of Math.
+            </p>
+          </div>
+        </div>
+
+        <div class="enroll">
+          <h3>Course Details</h3>
+          <p>
+            <i class="fa fa-video-camera"></i>
+            37 hours video
+          </p>
+          <p>
+            <i class="fa fa-file-text-o"> </i>
+            15 article
+          </p>
+          <p>
+            <i class="fa fa-cloud-download"> </i>
+            Downloadable Resources
+          </p>
+          <p>
+            <i class="fa fa-calendar"> </i>
+            Full lifetime access
+          </p>
+          <p>
+            <i class="fa fa-mobile"> </i>
+            Access on Web & Mobile
+          </p>
+          <p>
+            <i class="fa fa-paperclip"> </i>
+            Assignments
+          </p>
+          <p>
+            <i class="fa fa-certificate"> </i>
+            Certificate on completion.
+          </p>
+         
+          <div class="enroll-btn" id="fav-click">
+            <a
+              class="blue"
+              id="fav-click"
+              onclick="myfunction();addToFavourite('math')"
+            >
+              <i class="fa fa-heart"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- footer -->
+    <footer class="text-center main-footer footer_copy">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <aside class="footer-widget">
+                <h3 class="h3">Site Map</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#cat">Categories</a></li>
+                  <li><a href="aboutUs.html">About us</a></li>
+                  <li><a href="index.html#support">Support</a></li>
+                </ul>
+              </aside>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">About Foresight</h3>
+              <p class="par">
+                <b
+                  >We help students of all degrees and regions prepare for the
+                  path ahead - wherever it leads.</b
+                >
+              </p>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">Around the Web</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.youtube.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.twitter.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <b>Copyright &copy; 2021. All Rights Reserved For BAU</b><br />
+              <sub>Haitham Abdallah Ammar</sub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer -->
+    <script>
+      function addToFavourite(id) {
+        var url_string = window.location.href; // window.location.href
+        var url = new URL(url_string);
+        //var id = url.searchParams.get("details_id");
+        window.localStorage.setItem(id, "true");
+      }
+    </script>
+
+    <script>
+      var url_string = window.location.href; //window.location.href
+      var url = new URL(url_string);
+      var id = url.searchParams.get("details2_id");
+      if (id == 1) {
+        document.getElementById("details2_1").style.display = "block";
+        document.getElementById("details2_2").style.display = "none";
+        document.getElementById("details2_3").style.display = "none";
+        document.getElementById("details2_4").style.display = "none";
+        document.getElementById("details2_5").style.display = "none";
+        document.getElementById("details2_6").style.display = "none";
+      } else if (id == 2) {
+        document.getElementById("details2_1").style.display = "none";
+        document.getElementById("details2_2").style.display = "block";
+        document.getElementById("details2_3").style.display = "none";
+        document.getElementById("details2_4").style.display = "none";
+        document.getElementById("details2_5").style.display = "none";
+        document.getElementById("details2_6").style.display = "none";
+      } else if (id == 3) {
+        document.getElementById("details2_1").style.display = "none";
+        document.getElementById("details2_2").style.display = "none";
+        document.getElementById("details2_3").style.display = "block";
+        document.getElementById("details2_4").style.display = "none";
+        document.getElementById("details2_5").style.display = "none";
+        document.getElementById("details2_6").style.display = "none";
+      } else if (id == 4) {
+        document.getElementById("details2_1").style.display = "none";
+        document.getElementById("details2_2").style.display = "none";
+        document.getElementById("details2_3").style.display = "none";
+        document.getElementById("details2_4").style.display = "block";
+        document.getElementById("details2_5").style.display = "none";
+        document.getElementById("details2_6").style.display = "none";
+      } else if (id == 5) {
+        document.getElementById("details2_1").style.display = "none";
+        document.getElementById("details2_2").style.display = "none";
+        document.getElementById("details2_3").style.display = "none";
+        document.getElementById("details2_4").style.display = "none";
+        document.getElementById("details2_5").style.display = "block";
+        document.getElementById("details2_6").style.display = "none";
+      } else if (id == 6) {
+        document.getElementById("details2_1").style.display = "none";
+        document.getElementById("details2_2").style.display = "none";
+        document.getElementById("details2_3").style.display = "none";
+        document.getElementById("details2_4").style.display = "none";
+        document.getElementById("details2_5").style.display = "none";
+        document.getElementById("details2_6").style.display = "block";
+      } else {
+        window.location = "index.html";
+      }
+    </script>
+    <script>
+      function myfunction() {
+        swal("Nice!", "Added To Favourites", "success");
+      }
+    </script>
+
+
+
+    <!-- for nav bar  -->
+    <script type="module" src="js/login-firebase.js"></script>
+
+    <script type="module">
+      import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, sendPasswordResetEmail, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+      const auth = getAuth();
+    
+        function userOut() {
+          console.log("Potato");
+    
+          signOut(auth).then(() => {
+            console.log("Signed out Successfully");
+            location.href = "/login.html";
+    
+            // Sign-out successful.
+          }).catch((error) => {
+            console.log("Error Signing out");
+    
+            // An error happened.
+          });
+    
+        }
+    document.getElementById('sign-out-button').addEventListener('click', userOut, false);
+    
+    onAuthStateChanged(auth, user => {
+        if (user) {
+            console.log("User In");
+            console.log(user.uid);
+            document.getElementById("navLogin").style.display="none";
+            document.getElementById("fav-click").style.display="block";
+            document.getElementById("navFav").style.display="block";
+            document.getElementById("navUser").style.display="block";
+    
+            var email = user.email;
+            var currentUser=user;
+            // User is signed in, see docs for a list of available properties
+            // https://firebase.google.com/docs/reference/js/firebase.User
+            const uid = user.uid;
+            // ...
+        } else {
+            console.log("User Out");
+    
+            document.getElementById("navLogin").style.display="block";
+            document.getElementById("fav-click").style.display="none";
+            document.getElementById("navFav").style.display="none";
+            document.getElementById("navUser").style.display="none";
+    
+    
+            // User is signed out
+            // ...
+        }
+    })
+      </script>
+  </body>
+</html>

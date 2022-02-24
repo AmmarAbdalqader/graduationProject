@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <title>Error</title>
+  <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+  
+  <!--Google Fonts-->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+  </style>
+  <!--Google Fonts-->
+  
+</head>
+
+<body>
+ <!-- nav -->
+ <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom_nav">
+  <!-- <button id="sign-out-button" > TEST</button> -->
+
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo2.png" width="32" height="30" alt="" class="d-inline-block align-top">
+      Foresight
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-expanded="false">
+            Categories
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="courses.html?course_id=1">Development & Software</a></li>
+            <li><a class="dropdown-item" href="courses.html?course_id=2">Mathematics</a></li>
+            <li>
+            </li>
+            <li><a class="dropdown-item" href="courses.html?course_id=3">Health & Fitness</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html#support">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="aboutUs.html">About us</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <a href="Login.html" id="navLogin" class="btn btn-sm btn-success" style="display: block;"><b>Log in / Sign Up</b></a>
+      </div>
+      <div class="d-flex">
+        <a href="favourites.html" style="text-decoration: none;"><i class="fa fa-heart"  id="navFav" style="font-size:24px; color:#ca1711; margin: 10px 5px 10px 10px; "></i></a>
+      </div>
+
+      <!--Profie dropdown-->
+      <div class="dropdown"  id="navUser">
+        <a class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false"><img src="img/user.png" style="width: 35px; height: 35px;"></a>
+
+
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-item">
+            <a href="profile.html"><img src=img/user.png width="40" height="40"><b class="ml-2">fName</b></a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li class="dropdown-item">
+            <a class="dropdown-item" href="profile.html">Settings</a>
+          </li>
+          <li class="dropdown-item">
+            <a class="dropdown-item" href="index.html#support">Help</a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li class="dropdown-item">
+            <a class="dropdown-item" id="sign-out-button" style="color:#ca1711; text-align: right;"><b>Sign out</b></a>
+          </li>
+        </ul>
+      </div>
+      <!--Profie dropdown-->
+
+    </div>
+  </div>
+</nav>
+<!-- nav -->
+
+  <br>
+  <br>
+  <br>
+
+  <!-- 404 -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets9.lottiefiles.com/packages/lf20_6nmazhqu.json" background="transparent"
+          speed="1.5" style="width: 600px; height: 400px;" loop autoplay></lottie-player>
+      </div>
+
+      <div class="col-lg-6 col-md-6" style="text-align: center;">
+        <br>
+        <br>
+        <br>
+        
+
+        <h1>Oops!</h1>
+        <br>
+        <h5>404 Not Found</h5>
+        <p>
+          <strong>Error:</strong>
+          The requested address was not found on this server.
+        </p>
+        <br>
+        <a class="btn btn-outline-primary btn-lg" href="index.html">
+          <i class="fa fa-home"></i>
+          Take Me Home
+        </a>
+      </div>
+
+    </div>
+  </div>
+  <!-- 404 -->
+  <br>
+  <br>
+
+  <!-- Footer -->
+  <footer class="text-center main-footer footer_copy">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-4">
+            <aside class="footer-widget">
+              <h3 class="h3">Site Map</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#cat">Categories</a></li>
+                <li><a href="aboutUs.html">About us</a></li>
+                <li><a href="index.html#support">Support</a></li>
+              </ul>
+            </aside>
+          </div>
+
+          <div class="footer-col col-md-4">
+            <h3 class="h3">About Foresight</h3>
+            <p class="par"><b>We help students of all degrees and regions prepare for the path ahead - wherever it
+                leads.</b>
+            </p>
+          </div>
+
+          <div class="footer-col col-md-4">
+            <h3 class="h3">Around the Web</h3>
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com" class="btn-social btn-outline" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.youtube.com" class="btn-social btn-outline" target="_blank"><i
+                    class="fa fa-fw fa-youtube"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.twitter.com" class="btn-social btn-outline" target="_blank"><i
+                    class="fa fa-fw fa-twitter"></i></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com" class="btn-social btn-outline" target="_blank"><i
+                    class="fa fa-fw fa-linkedin"></i></a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-below">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <b>Copyright &copy; 2021. All Rights Reserved For BAU</b><br>
+            <sub>Haitham Abdallah Ammar</sub>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+
+
+  <!-- for nav dropdown-->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <!-- for nav dropdown-->
+  <script type="module" src="js/login-firebase.js"></script>
+
+  <script type="module">
+    import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, sendPasswordResetEmail, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+    const auth = getAuth();
+  
+      function userOut() {
+        console.log("Potato");
+  
+        signOut(auth).then(() => {
+          console.log("Signed out Successfully");
+          location.href = "/login.html";
+  
+          // Sign-out successful.
+        }).catch((error) => {
+          console.log("Error Signing out");
+  
+          // An error happened.
+        });
+  
+      }
+  document.getElementById('sign-out-button').addEventListener('click', userOut, false);
+  
+  onAuthStateChanged(auth, user => {
+      if (user) {
+          console.log("User In");
+          console.log(user.uid);
+          document.getElementById("navLogin").style.display="none";
+          document.getElementById("navFav").style.display="block";
+          document.getElementById("navUser").style.display="block";
+  
+          var email = user.email;
+          var currentUser=user;
+          // User is signed in, see docs for a list of available properties
+          // https://firebase.google.com/docs/reference/js/firebase.User
+          const uid = user.uid;
+          // ...
+      } else {
+          console.log("User Out");
+  
+          document.getElementById("navLogin").style.display="block";
+          document.getElementById("navFav").style.display="none";
+          document.getElementById("navUser").style.display="none";
+  
+  
+          // User is signed out
+          // ...
+      }
+  })
+    </script>
+
+</body>
+
+</html>

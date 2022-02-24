@@ -1,0 +1,54 @@
+body {
+    background: #85c3ff
+}
+
+.profile-button {
+    background: #0c5599;
+    box-shadow: none;
+    border: none
+}
+.profile-button:hover {
+    background: #1a5859
+}
+.profile-button:focus {
+    background: #1a5859;
+    box-shadow: none;
+}
+.profile-button:active {
+    background: #1a5859;
+    box-shadow: none;
+}
+
+
+.delete-button{
+    background: #a9322a;
+    box-shadow: none;
+    border: none
+}
+.delete-button:hover{
+    background: #992b21;
+}
+.delete-button:focus{
+    background: #992b21;
+    box-shadow: none;
+}
+.delete-button:active{
+    background: #992b21;
+    box-shadow: none;
+}
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}

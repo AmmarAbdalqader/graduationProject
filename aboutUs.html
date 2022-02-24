@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/aboutUs.css" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+
+    <!--Google Fonts-->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+        @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+    </style>
+    <!--Google Fonts-->
+
+    <!-- for nav dropdown-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- for nav dropdown-->
+</head>
+
+<body>
+   <!-- nav -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom_nav">
+    <!-- <button id="sign-out-button" > TEST</button> -->
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo2.png" width="32" height="30" alt="" class="d-inline-block align-top">
+        Foresight
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html?course_id=1">Development & Software</a></li>
+              <li><a class="dropdown-item" href="courses.html?course_id=2">Mathematics</a></li>
+              <li>
+              </li>
+              <li><a class="dropdown-item" href="courses.html?course_id=3">Health & Fitness</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#support">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutUs.html">About us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="Login.html" id="navLogin" class="btn btn-sm btn-success" style="display: block;"><b>Log in / Sign Up</b></a>
+        </div>
+        <div class="d-flex">
+          <a href="favourites.html" style="text-decoration: none;"><i class="fa fa-heart"  id="navFav" style="font-size:24px; color:#ca1711; margin: 10px 5px 10px 10px; "></i></a>
+        </div>
+
+        <!--Profie dropdown-->
+        <div class="dropdown"  id="navUser">
+          <a class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"><img src="img/user.png" style="width: 35px; height: 35px;"></a>
+
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">
+              <a href="profile.html"><img src=img/user.png width="40" height="40"><b class="ml-2">fName</b></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="profile.html">Settings</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="index.html#support">Help</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" id="sign-out-button" style="color:#ca1711; text-align: right;"><b>Sign out</b></a>
+            </li>
+          </ul>
+        </div>
+        <!--Profie dropdown-->
+
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+
+
+    <!-- About-Us -->
+    <div class="about-section">
+        <div class="contaienr-about">
+            <div class="content-section">
+                <div class="title-about">
+                    <h1><b>About Us</b></h1>
+                </div>
+                <div class="about-content">
+                    <h3>We share knowledge with the world</h3>
+                    <p>
+                        Whether you want to learn or to share what you know,
+                        you've come to the right place. As a global destination for
+                        online learning, we connect people through knowledge.
+                    </p>
+                    <div class="about-button">
+                        <a href="">Read More</a>
+                    </div>
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter-square"></i></a>
+                    <a href="https://www.youtube.com" target="_blank"><i class="fa fa-fw fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="img/about.png" alt="About-Us" />
+            </div>
+        </div>
+    </div>
+    <!-- About-Us -->
+
+    <!-- img -->
+    <div>
+        <img style="height: 100%; width: 100%;" src="img/aboutUs.png" />
+    </div>
+    <!-- img -->
+
+    <!-- cards -->
+    <section>
+        <div class="container">
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mycard" style="background-color: #a435f0; color: white;">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-family: Arial, sans-serif;"><b>Work with us</b></h3>
+                            <p class="card-text" style="margin-bottom: 30%; font-size: 19px;">At Foresight, we're all learners and
+                                instructors. We live out our values every day to create a culture that is diverse,
+                                inclusive, and committed to helping employees thrive.</p>
+                            <a class="a" href="index.html"><b>Join our team</b> &nbsp;<i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mycard" style="background-color: #d4d23a;">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-family: Arial, sans-serif;"><b>See our research</b></h3>
+                            <p class="card-text" style="margin-bottom: 30%; font-size: 19px;">We're committed to changing the future of
+                                learning for the better. Dig into our original research to learn about the forces that
+                                are shaping the modern workplace.</p>
+                            <a class="a" href="index.html" style="color: black;"><b>Learn more</b> &nbsp;<i
+                                    class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="card mycard" style="background-color: #2d907f; color: white;">
+                        <div class="card-body">
+                            <h3 class="card-title" style="font-family: Arial, sans-serif;"><b>Read our blog</b></h3>
+                            <p class="card-text" style="margin-bottom: 30%;  font-size: 19px;line-height: 35.5px;">Want to know what we've been up to lately?
+                                Check out the blog to get the scoop on the latest news, ideas, projects and designs, and more.
+                            </p>
+                            <a class="a" href="index.html"><b>Read now</b> &nbsp;<i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- cards -->
+
+    <!-- footer -->
+    <footer class="text-center main-footer footer_copy">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-4">
+                        <aside class="footer-widget">
+                            <h3 class="h3">Site Map</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="index.html#cat">Categories</a></li>
+                                <li><a href="aboutUs.html">About us</a></li>
+                                <li><a href="index.html#support">Support</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+
+                    <div class="footer-col col-md-4">
+                        <h3 class="h3">About Foresight</h3>
+                        <p class="par">
+                            <b>We help students of all degrees and regions prepare for the
+                                path ahead - wherever it leads.</b>
+                        </p>
+                    </div>
+
+                    <div class="footer-col col-md-4">
+                        <h3 class="h3">Around the Web</h3>
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com" class="btn-social btn-outline" target="_blank"><i
+                                        class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.youtube.com" class="btn-social btn-outline" target="_blank"><i
+                                        class="fa fa-fw fa-youtube"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.twitter.com" class="btn-social btn-outline" target="_blank"><i
+                                        class="fa fa-fw fa-twitter"></i></a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com" class="btn-social btn-outline" target="_blank"><i
+                                        class="fa fa-fw fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <b>Copyright &copy; 2021. All Rights Reserved For BAU</b><br />
+                        <sub>Haitham Abdallah Ammar</sub>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+    <script>
+        var path = window.location.pathname;
+        // var page = path.split("/").pop();
+        sessionStorage.setItem("page", "aboutUs.html");
+        // console.log(page);
+      </script>
+<!-- for nav bar -->
+<script type="module" src="js/login-firebase.js"></script>
+
+<script type="module">
+  import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, sendPasswordResetEmail, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+  const auth = getAuth();
+
+    function userOut() {
+      console.log("Potato");
+
+      signOut(auth).then(() => {
+        console.log("Signed out Successfully");
+        location.href = "/login.html";
+
+        // Sign-out successful.
+      }).catch((error) => {
+        console.log("Error Signing out");
+
+        // An error happened.
+      });
+
+    }
+document.getElementById('sign-out-button').addEventListener('click', userOut, false);
+
+onAuthStateChanged(auth, user => {
+    if (user) {
+        console.log("User In");
+        console.log(user.uid);
+        document.getElementById("navLogin").style.display="none";
+        document.getElementById("navFav").style.display="block";
+        document.getElementById("navUser").style.display="block";
+
+        var email = user.email;
+        var currentUser=user;
+        // User is signed in, see docs for a list of available properties
+        // https://firebase.google.com/docs/reference/js/firebase.User
+        const uid = user.uid;
+        // ...
+    } else {
+        console.log("User Out");
+
+        document.getElementById("navLogin").style.display="block";
+        document.getElementById("navFav").style.display="none";
+        document.getElementById("navUser").style.display="none";
+
+
+        // User is signed out
+        // ...
+    }
+})
+  </script>
+</body>
+
+</html>

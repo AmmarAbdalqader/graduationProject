@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/course_style.css" />
+    <title>Courses</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo2.png" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+    <!--Google Fonts-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+    </style>
+    <!--Google Fonts-->
+  </head>
+
+  <body>
+   <!-- nav -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom_nav">
+    <!-- <button id="sign-out-button" > TEST</button> -->
+
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logo2.png" width="32" height="30" alt="" class="d-inline-block align-top">
+        Foresight
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="courses.html?course_id=1">Development & Software</a></li>
+              <li><a class="dropdown-item" href="courses.html?course_id=2">Mathematics</a></li>
+              <li>
+              </li>
+              <li><a class="dropdown-item" href="courses.html?course_id=3">Health & Fitness</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html#support">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="aboutUs.html">About us</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a href="Login.html" id="navLogin" class="btn btn-sm btn-success" style="display: block;"><b>Log in / Sign Up</b></a>
+        </div>
+        <div class="d-flex">
+          <a href="favourites.html" style="text-decoration: none;"><i class="fa fa-heart"  id="navFav" style="font-size:24px; color:#ca1711; margin: 10px 5px 10px 10px; "></i></a>
+        </div>
+
+        <!--Profie dropdown-->
+        <div class="dropdown"  id="navUser">
+          <a class="btn btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false"><img src="img/user.png" style="width: 35px; height: 35px;"></a>
+
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li class="dropdown-item">
+              <a href="profile.html"><img src=img/user.png width="40" height="40"><b class="ml-2">fName</b></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="profile.html">Settings</a>
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" href="index.html#support">Help</a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-item">
+              <a class="dropdown-item" id="sign-out-button" style="color:#ca1711; text-align: right;"><b>Sign out</b></a>
+            </li>
+          </ul>
+        </div>
+        <!--Profie dropdown-->
+
+      </div>
+    </div>
+  </nav>
+  <!-- nav -->
+
+
+    <!-- Reviews slider -->
+    <section id="course_1" style="display: none">
+      <h1 class="heading">Development & Software</h1>
+
+      <div class="box-container">
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details.html?details_id=1';"
+        >
+          <img src="img/html-5.png" alt="" />
+          <p>Modern HTML From The Beginning <br /><br /><br /><br /></p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-down"
+          onclick="window.location.href= 'details.html?details_id=2';"
+        >
+          <img src="img/css-3.png" alt="" />
+          <p>Advanced CSS: Flexbox, Grid and More! <br /><br /><br /><br /></p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-left"
+          onclick="window.location.href= 'details.html?details_id=3';"
+        >
+          <img src="img/js.png" alt="" />
+          <p>
+            The Complete JavaScript Course: From Zero to Expert!
+            <br /><br /><br />
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details.html?details_id=4';"
+        >
+          <img src="img/sass.png" alt="" />
+          <p>
+            iPhone Apps with Swift, SwiftUI & iOS 15 <br /><br /><br /><br />
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details.html?details_id=5';"
+        >
+          <img src="img/android.png" alt="" />
+          <p>
+            The Complete Android 12 & Kotlin Development Masterclass
+            <br /><br /><br />
+          </p>
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details.html?details_id=6';"
+        >
+          <img src="img/letter-c.png" alt="" />
+          <p>
+            C Programming Language: The Ultimate Guide for Beginners
+            <br /><br /><br />
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="course_2" style="display: none">
+      <h1 class="heading">Mathematics</h1>
+
+      <div class="box-container">
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details2.html?details2_id=1';"
+        >
+          <img src="img/calculus.png" alt="" />
+          <p>Pre Calculus, Calculus and Trigonometry</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-down"
+          onclick="window.location.href= 'details2.html?details2_id=2';"
+        >
+          <img src="img/discrete-math.png" alt="" />
+          <p>Discrete Mathematics</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-left"
+          onclick="window.location.href= 'details2.html?details2_id=3';"
+        >
+          <img src="img/analytics.png" alt="" />
+          <p>Business Analytics & Intelligence</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details2.html?details2_id=4';"
+        >
+          <img src="img/matrix.png" alt="" />
+          <p>Matrix Algebra</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details2.html?details2_id=5';"
+        >
+          <img src="img/vector.png" alt="" />
+          <p>Vectors for Math and Calculus</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details2.html?details2_id=6';"
+        >
+          <img src="img/mathematics.png" alt="" />
+          <p>Vedic Mathematics</p>
+          <br /><br /><br />
+        </div>
+      </div>
+    </section>
+    <section id="course_3" style="display: none">
+      <h1 class="heading">Health & Fitness</h1>
+
+      <div class="box-container">
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details3.html?details3_id=1';"
+        >
+          <img src="img/physiotherapy.png" alt="" />
+          <p>Physiotherapy</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-down"
+          onclick="window.location.href= 'details3.html?details3_id=2';"
+        >
+          <img src="img/fitness.png" alt="" />
+          <p>Yoga</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-left"
+          onclick="window.location.href= 'details3.html?details3_id=3';"
+        >
+          <img src="img/coach.png" alt="" />
+          <p>life Couch</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          3
+          data-aos="flip-right"
+          onclick="window.location.href= 'details3.html?details3_id=4';"
+        >
+          <img src="img/seo.png" alt="" />
+          <p>Sports Management</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details3.html?details3_id=5';"
+        >
+          <img src="img/yoga.png" alt="" />
+
+          <p>Meditation</p>
+          <br /><br /><br />
+        </div>
+
+        <div
+          class="box"
+          data-aos="flip-right"
+          onclick="window.location.href= 'details3.html?details3_id=6';"
+        >
+          <img src="img/book.png" alt="" />
+          <p>Football (Soccer) Tactics</p>
+          <br /><br /><br />
+        </div>
+      </div>
+    </section>
+    <!-- Reviews slider -->
+
+    <!-- Footer -->
+    <footer class="text-center main-footer footer_copy">
+      <div class="footer-above">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col col-md-4">
+              <aside class="footer-widget">
+                <h3 class="h3">Site Map</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="index.html#cat">Categories</a></li>
+                  <li><a href="aboutUs.html">About us</a></li>
+                  <li><a href="index.html#support">Support</a></li>
+                </ul>
+              </aside>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">About Foresight</h3>
+              <p class="par">
+                <b
+                  >We help students of all degrees and regions prepare for the
+                  path ahead - wherever it leads.</b
+                >
+              </p>
+            </div>
+
+            <div class="footer-col col-md-4">
+              <h3 class="h3">Around the Web</h3>
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.facebook.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.youtube.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-youtube"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.twitter.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-twitter"></i
+                  ></a>
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com"
+                    class="btn-social btn-outline"
+                    target="_blank"
+                    ><i class="fa fa-fw fa-linkedin"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-below">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <b>Copyright &copy; 2021. All Rights Reserved For BAU</b><br />
+              <sub>Haitham Abdallah Ammar</sub>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script src="js/courses/navbar.js"></script>
+    <script>
+      var url_string = window.location.href; //window.location.href
+      var url = new URL(url_string);
+      var id = url.searchParams.get("course_id");
+      if (id == 1) {
+        document.getElementById("course_1").style.display = "block";
+        document.getElementById("course_2").style.display = "none";
+        document.getElementById("course_3").style.display = "none";
+      } else if (id == 2) {
+        document.getElementById("course_1").style.display = "none";
+        document.getElementById("course_2").style.display = "block";
+        document.getElementById("course_3").style.display = "none";
+      } else if (id == 3) {
+        document.getElementById("course_1").style.display = "none";
+        document.getElementById("course_2").style.display = "none";
+        document.getElementById("course_3").style.display = "block";
+      } else {
+        window.location = "index.html";
+      }
+    </script>
+     <script>
+      var path = window.location.pathname;
+      // var page = path.split("/").pop();
+      sessionStorage.setItem("page", "courses.html");
+      // console.log(page);
+    </script>
+
+    <!-- for nav bar  -->
+    <script type="module" src="js/login-firebase.js"></script>
+
+
+    <script type="module">
+      import { getAuth, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut, sendPasswordResetEmail, FacebookAuthProvider } from "https://www.gstatic.com/firebasejs/9.4.1/firebase-auth.js";
+      const auth = getAuth();
+    
+        function userOut() {
+          console.log("Potato");
+    
+          signOut(auth).then(() => {
+            console.log("Signed out Successfully");
+            location.href = "/login.html";
+    
+            // Sign-out successful.
+          }).catch((error) => {
+            console.log("Error Signing out");
+    
+            // An error happened.
+          });
+    
+        }
+    document.getElementById('sign-out-button').addEventListener('click', userOut, false);
+    
+    onAuthStateChanged(auth, user => {
+        if (user) {
+            console.log("User In");
+            console.log(user.uid);
+            document.getElementById("navLogin").style.display="none";
+            document.getElementById("navFav").style.display="block";
+            document.getElementById("navUser").style.display="block";
+    
+            var email = user.email;
+            var currentUser=user;
+            // User is signed in, see docs for a list of available properties
+            // https://firebase.google.com/docs/reference/js/firebase.User
+            const uid = user.uid;
+            // ...
+        } else {
+            console.log("User Out");
+    
+            document.getElementById("navLogin").style.display="block";
+            document.getElementById("navFav").style.display="none";
+            document.getElementById("navUser").style.display="none";
+    
+    
+            // User is signed out
+            // ...
+        }
+    })
+      </script>
+
+
+  </body>
+</html>
